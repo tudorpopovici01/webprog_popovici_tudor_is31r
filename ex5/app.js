@@ -1,8 +1,4 @@
-describe("extractCurrencyValue", function() {
-
-  it("returneaza pentru string $120 numar 120", function() {
-    assert.strictEqual(extractCurrencyValue('$120'), 120);
-  });
-
-
-});
+function extractCurencyValue(str){
+  return + str.substring(1, str.length);
+  }
+  alert(extractCurencyValue('$120')===120);
