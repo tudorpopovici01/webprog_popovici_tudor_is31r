@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <table class="table">
-        <thead>
+  <div id="app">
+        <table border = 1>
           <tr>
             <th scope="col">Salariul mediu </th>
             <th scope="col">Salariu minimal</th>
@@ -25,8 +25,9 @@
             <td id="suma"></td>
           </tr>
           
-        </tbody>
+        
       </table>
+    </div>
 
       <div id="app">
         <table border=1>
@@ -36,6 +37,18 @@
                 <th>numar telefon</th>
                 <th>adresa</th>
                 <th>email</th>
+                <th>gen</th>
+                <th>functia</th>
+                <th>data angajarii</th>
+                <th>IDNP</th>
+                <th>sumaSalariu</th>
+                <th>locul nasteriil</th>
+                <th>stagiu de munca</th>
+                <th>sectia</th>
+                <th>telefon domiciliu</th>
+                <th>email</th>
+                <th>program de munca</th>
+
             </tr>
             <tr v-for="employee of employees">
                 <td>{{ employee.name }}</td>
