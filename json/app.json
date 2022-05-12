@@ -1,0 +1,21 @@
+{
+    "FIO": "Popovici Tudor",
+    "data nasterii": "01.10.1984",
+    "numar telefon": "067489789",
+    "adresa": "Oras srt Eminescu 1",
+    "email":"email@mail.md",
+    "gen": "M",
+    "functia": "student",
+    "data angajarii": "01.10.2000",
+    "IDNP": "2002002002222",
+    "suma salariu": 20020,
+    "locul nasterii": "Floresti",
+    "stagiu de munca": 20,
+    "sectia": "Munca",
+    "telefon domiciliu": 20020,
+    "program munca": {
+      "ore de lucru": "8:00 - 17:00",
+      "prinzul": "12:00 - 13:00"
+            }  
+    
+    }

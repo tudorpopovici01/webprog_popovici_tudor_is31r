@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Salariul mediu </th>
+            <th scope="col">Salariu minimal</th>
+            <th scope="col">Salariul maximal</th>
+            <th scope="col">Salariul total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td id="sal_mediu"></td>
+            <td id="sal_min"></td>
+            <td id="sal_max"></td>
+            <td id="suma"></td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      <div id="app">
+        <table border=1>
+            <tr>
+                <th>Name Prenume</th>
+                <th>data nasterii</th>
+                <th>numar telefon</th>
+                <th>adresa</th>
+                <th>email</th>
+            </tr>
+            <tr v-for="employee of employees">
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.salary }}</td>
+            </tr>
+            <tr>
+                <th>Total salary</th>
+                <th>{{ totalSalary }}</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
