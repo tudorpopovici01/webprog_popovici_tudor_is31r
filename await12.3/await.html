@@ -1,0 +1,39 @@
+ Напишите функцию userRequest которая вызывает другую функцию serverResponse.
+ После получения ответа, результат выводить на странице, в блок с id=result.
+ Функция serverResponse возвращает ответ через 2 секунда после того как ее вызвали. 
+ Сценарий:
+ вызов userRequest
+ в блок result видно сообщение “Waiting for response...”
+ внутри метода userRequest вызывается метод serverResponse
+ после получения ответа от метода serverResponse, в блоке будет виден текст “Response from server”.
+ Используйте async и await для выполнения сценария.
+
+
+
+
+<!DOCTYPE html>
+<script>
+"use strict";
+
+function serverResponse() {
+  return "Response from server";
+}
+
+async function userRequest() {
+
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve(serverResponse()), 2000)
+  });
+
+  let result = await promise; // будет ждать, пока промис не выполнится (*)
+
+  document.getElementById("result").innerHTML = result;
+  
+  //return result; // "готово!"
+}
+</script>
+<body>
+  <div id="result">Waiting for response...</div>
+  <button onclick="userRequest();">Ok</button>
+  
+</body>

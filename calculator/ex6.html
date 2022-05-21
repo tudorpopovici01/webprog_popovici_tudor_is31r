@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Calculator</title>
+   </head>
+    <body>
+        <div class="content">
+            <h1>Introduceti valorile intregi apoi alegeti operatia...</h1>
+            <button onclick="operationUser.delValues();">Sterge valorile</button>
+            <input type="text" id="val1" oninput="operationUser.validateNumber();" placeholder="value1">
+            <input type="text" id="val2" oninput="operationUser.validateNumber();" placeholder="value2">
+            <input type="text" id="rez" placeholder="rezultat">
+            <p id="info"></p>
+            <button onclick="operationUser.getSum();">Adunarea</button>
+            <button onclick="operationUser.getProd();">Inmultirea</button>
+            <button onclick="operationUser.getDiff();">Diferenta</button>
+            <button onclick="operationUser.getDiv();">Impartirea</button>
+        </div>       
+        <script src="js/app6.js"></script>
+    </body>
+</html>
